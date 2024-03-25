@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/17mxQ2Q/kindpng-4945926-1.png",
+      "review": "A brilliant portrayal of the Jazz Age and the American Dream, filled with tragic characters and timeless themes.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance", "Tragedy"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/Cv2yV6m/kindpng-5624060-1.png",
+      "review": "A poignant exploration of racial injustice and moral growth, seen through the eyes of a young girl in the American South.",
+      "totalPages": 281,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Classic", "Coming-of-age", "Legal drama"],
+      "publisher": "J. B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 3,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/r4n73b3/kindpng-2193744-1.png",
+      "review": "A compelling narrative of teenage angst and rebellion, capturing the essence of adolescence in post-war America.",
+      "totalPages": 224,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Classic", "Coming-of-age"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 4,
+      "bookName": "Annotated Texas Family",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/swVyK6H/kindpng-81724-1.png",
+      "review": "A chilling dystopian vision of a totalitarian future, where individuality is suppressed and truth is manipulated.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political fiction", "Science fiction"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": 5,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/nCXpRgR/kindpng-1064993.png",
+      "review": "A delightful romantic comedy of manners, offering sharp social commentary and memorable characters.",
+      "totalPages": 279,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance", "Satire"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 6,
+      "bookName": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/QKmk9Gg/kindpng-7318921.png",
+      "review": "An enchanting adventure tale set in a fantastical world, filled with memorable characters and epic quests.",
+      "totalPages": 310,
+      "rating": 4.9,
+      "category": "Fiction",
+      "tags": ["Fantasy", "Adventure"],
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1937
+    }
+  ]
+  
