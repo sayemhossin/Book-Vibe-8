@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import UseData from "../../UseData/UseData";
-import { setDataToLS } from "../../LocalStorage/LocalStorage";
+import { setDataToLS, setDataToLS2 } from "../../LocalStorage/LocalStorage";
 
 const BookDetails = () => {
     const [singleData, setSingleData] = useState(null);
@@ -18,6 +18,9 @@ const BookDetails = () => {
     }
 const handleRead = () =>{
     setDataToLS(singleData)
+}
+const handleWish = () =>{
+    setDataToLS2(singleData)
 }
     const { image, bookName, author, yearOfPublishing, rating, totalPages, tags, category, review } = singleData;
 
@@ -52,7 +55,7 @@ const handleRead = () =>{
                         </div>
                         <div  className="flex gap-9 mt-10 ">
                             <button onClick={handleRead} className="btn text-xl">Read</button>
-                            <button className="btn bg-[#50B1C9] text-white text-xl">Wishlist</button>
+                            <button onClick={handleWish} className="btn bg-[#50B1C9] text-white text-xl">Wishlist</button>
                         </div>
                     </div>
 

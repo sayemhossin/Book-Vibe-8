@@ -12,8 +12,25 @@ export const setDataToLS = (data)=>{
    toast.warn('Already added')
    }
 }
+export const setDataToLS2 = (data)=>{
+   const setData2 = JSON.parse(localStorage.getItem('card2')) ||[]
+   const isExists = setData2.find((item)=>item.id == data.id)
+   if(!isExists){
+    setData2.push(data)
+    localStorage.setItem("card2", JSON.stringify(setData2))
+    toast.success('Added Successfully')
+   }
+   else{
+   toast.warn('Already added')
+   }
+}
 
 export const getDataFromLS = ()=>{
     const data =JSON.parse( localStorage.getItem('card')) || []
+    return data
+}
+
+export const getDataFromLS2 = ()=>{
+    const data =JSON.parse( localStorage.getItem('card2')) || []
     return data
 }

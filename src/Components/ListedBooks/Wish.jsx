@@ -1,6 +1,6 @@
-import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";const Read = ({item}) => {
-    const { image,bookName,author,publisher,rating,yearOfPublishing,tags,category,totalPages} = item
+import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";
 
+const Wish = ({item}) => { const { image,bookName,author,publisher,rating,yearOfPublishing,tags,category,totalPages} = item
     return (
         <div className="   mt-5 border-2 p-4  rounded-lg">
         <div className="flex gap-14 flex-col lg:flex-row">
@@ -42,8 +42,7 @@ import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";const Read 
       </div>
 
 
-    
     );
 };
 
-export default Read;
+export default Wish;
