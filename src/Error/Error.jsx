@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 
 const Error = () => {
     return (
-        <div className="mt-20">
-            <h1 className="text-4xl text-center font-bold">Oops!!!</h1>
-            <h1 className="text-4xl text-center font-bold">The Page Is Error</h1>
+        <div className="relative">
+           <Link to={'/'}> <button className="ml-14 md:absolute text-2xl btn btn-link">Go Back</button> </Link>
+           <img className="w-screen md:h-screen md:p-9 " src="https://i.ibb.co/WPh5cNF/50-Cool-and-Creative-404-Error-Pages-25.jpg" alt="" />
         </div>
     );
 };

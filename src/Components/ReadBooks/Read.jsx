@@ -1,5 +1,9 @@
-import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";const Read = ({item}) => {
-    const { image,bookName,author,publisher,rating,yearOfPublishing,tags,category,totalPages} = item
+import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";
+import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
+
+const Read = ({item}) => {
+    const {id, image,bookName,author,publisher,rating,yearOfPublishing,tags,category,totalPages} = item
 
     return (
         <div className="   mt-5 border-2 p-4  rounded-lg">
@@ -22,20 +26,13 @@ import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";const Read 
  Page {totalPages}</p>
             </div>
 
-
 <div className="divider"></div>
-
-
-
-
-
-
            <div className=  "flex flex-col md:flex-row gap-6 text-xl">
          <h1 className="bg-[#b9d7fc] text-[#328EFF] p-2 rounded-full text-center
          ">Category: {category}</h1>
          <h1 className="bg-[#ffe5be] text-[#3FFAC33] px-4 p-2 rounded-full text-center
          ">Rating: {rating}</h1>
-        <button className="btn rounded-full bg-[#23BE0A] text-xl">view Details</button>
+        <Link to={`/details/${id}`}><button className="btn rounded-full bg-[#23BE0A] text-xl">view Details</button></Link>
            </div>
           </div>
         </div>
@@ -45,5 +42,9 @@ import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";const Read 
     
     );
 };
+
+Read.propTypes ={
+  item:PropTypes.object
+}
 
 export default Read;

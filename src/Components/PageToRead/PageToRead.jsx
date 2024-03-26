@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, DefaultTooltipContent, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, } from 'recharts';
+import PropTypes from 'prop-types';
 import { getDataFromLS } from '../../LocalStorage/LocalStorage';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
@@ -59,4 +60,12 @@ const TriangleBar = (props) => {
     );
 };
 
+
+PageToRead.propTypes = {
+  fill: PropTypes.string.isRequired,
+  x: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+};
 export default PageToRead;

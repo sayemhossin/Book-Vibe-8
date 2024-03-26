@@ -1,5 +1,6 @@
 import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 const Book = ({item}) => {
     const {id, image,bookName,author,rating,tags,category} = item
     return (
@@ -26,5 +27,9 @@ const Book = ({item}) => {
        </Link>
     );
 };
+
+Book.propTypes ={
+  item:PropTypes.object
+}
 
 export default Book;

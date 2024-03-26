@@ -1,5 +1,5 @@
 import { FaFile, FaLocationDot, FaUserGroup } from "react-icons/fa6";
-
+import PropTypes from 'prop-types';
 const Wish = ({item}) => { const { image,bookName,author,publisher,rating,yearOfPublishing,tags,category,totalPages} = item
     return (
         <div className="   mt-5 border-2 p-4  rounded-lg">
@@ -44,5 +44,9 @@ const Wish = ({item}) => { const { image,bookName,author,publisher,rating,yearOf
 
     );
 };
+
+Wish.propTypes ={
+  item:PropTypes.object
+}
 
 export default Wish;

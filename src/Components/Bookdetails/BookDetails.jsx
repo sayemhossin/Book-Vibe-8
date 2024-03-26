@@ -14,7 +14,8 @@ const BookDetails = () => {
     }, [data, id]);
 
     if (!singleData) {
-        return <div>Loading...</div>;
+        return <div className=" mt-40 text-center">
+        <span className="loading  text-center loading-bars loading-lg"></span></div>;
     }
 const handleRead = () =>{
     setDataToLS(singleData)
@@ -22,6 +23,8 @@ const handleRead = () =>{
 const handleWish = () =>{
     setDataToLS2(singleData)
 }
+
+
     const { image, bookName, author, yearOfPublishing, rating, totalPages, tags, category, review } = singleData;
 
     return (
