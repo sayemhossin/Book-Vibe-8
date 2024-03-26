@@ -8,6 +8,7 @@ import ListedBooks from "../Components/ListedBooks/ListedBooks";
 import Error from "../Error/Error";
 import About from "../Components/About/About";
 import Profile from "../Components/Profile/Profile";
+import PageToRead from "../Components/PageToRead/PageToRead";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/Page-to-read',
-                element: <p>This is Page-to-read</p>
+                element: <PageToRead></PageToRead>
             },
             {
                 path: '/about',

@@ -8,7 +8,7 @@ const About = () => {
 			<h1 className="text-4xl font-bold md:tracking-tight md:text-5xl">Welcome to Book Vibe Website</h1>
 			
 		</div>
-		<div className="dark:text-gray-800 p-10 text-xl">
+		<div className="dark:text-gray-800 p-4 md:p-10 md:text-xl">
 			<div className="text-gray-500">
                 <p>Welcome to Book Vibe, your haven for literary exploration and discovery. We are passionate about books and believe in the power of storytelling to inspire, educate, and connect people from all walks of life.</p>
 <p>
