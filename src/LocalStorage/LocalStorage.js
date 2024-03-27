@@ -15,7 +15,8 @@ export const setDataToLS = (data)=>{
 export const setDataToLS2 = (data)=>{
    const setData2 = JSON.parse(localStorage.getItem('card2')) ||[]
    const isExists = setData2.find((item)=>item.id == data.id)
-   if(!isExists){
+   const isExistsInRead = getDataFromLS().find((item) => item.id === data.id);
+   if(!isExists && !isExistsInRead){
     setData2.push(data)
     localStorage.setItem("card2", JSON.stringify(setData2))
     toast.success('Added Successfully')

@@ -8,6 +8,7 @@ const BookDetails = () => {
     const { id } = useParams();
     const { data } = UseData();
 
+ 
     useEffect(() => {
         const singleBook = data.find(item => item.id === parseInt(id));
         setSingleData(singleBook);
@@ -17,13 +18,16 @@ const BookDetails = () => {
         return <div className=" mt-40 text-center">
         <span className="loading  text-center loading-bars loading-lg"></span></div>;
     }
+   
+   
 const handleRead = () =>{
     setDataToLS(singleData)
+  
 }
 const handleWish = () =>{
     setDataToLS2(singleData)
+   
 }
-
 
     const { image, bookName, author, yearOfPublishing, rating, totalPages, tags, category, review } = singleData;
 

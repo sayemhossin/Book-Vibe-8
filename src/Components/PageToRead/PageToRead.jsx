@@ -31,12 +31,12 @@ const TriangleBar = (props) => {
 };
 
     return (
-        <div  className=' flex justify-center item-center'>
+        <div  className=' flex justify-center item-center '>
          
            <BarChart
           
       width={800}
-      height={300}
+      height={500}
       data={data}
       margin={{
         top: 20,
@@ -45,10 +45,10 @@ const TriangleBar = (props) => {
         bottom: 5,
       }}
     >
-      <CartesianGrid strokeDasharray="3 3" />
+      <CartesianGrid  strokeDasharray="3 3" />
       <XAxis className='text-xs' dataKey="bookName" />
       <YAxis />
-      <Bar   dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+      <Bar   dataKey="totalPages"  fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
         {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={colors[index % 20]} />
         ))}
@@ -62,10 +62,10 @@ const TriangleBar = (props) => {
 
 
 PageToRead.propTypes = {
-  fill: PropTypes.string.isRequired,
-  x: PropTypes.number.isRequired,
-  y: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
-  height: PropTypes.number.isRequired,
+  fill: PropTypes.string,
+  x: PropTypes.number,
+  y: PropTypes.number,
+  width: PropTypes.number,
+  height: PropTypes.number
 };
 export default PageToRead;
